@@ -3,23 +3,23 @@ import { Calendar, Megaphone, Briefcase, MessageCircle } from 'lucide-react';
 const features = [
   {
     icon: Briefcase,
-    title: 'Work Programs',
-    description: 'Discover our strategic initiatives designed to empower students and strengthen the madrasah community. Each program is carefully crafted to align with Islamic values while fostering leadership and innovation.'
+    title: 'Program Kerja',
+    description: 'Jelajahi berbagai agenda kreatif dan rencana aksi nyata dari setiap Bidang.'
   },
   {
     icon: Calendar,
     title: 'Smart Calendar',
-    description: 'Never miss an important event with our interactive calendar system. Stay updated on upcoming activities, religious celebrations, and organizational meetings all in one convenient place.'
+    description: 'Pantau seluruh jadwal kegiatan dan pengingat acara penting agar kamu selalu terinformasi tepat waktu.'
   },
   {
     icon: Megaphone,
-    title: 'News Engine',
-    description: 'Get real-time updates on campus happenings, student achievements, and organizational announcements. Our news engine keeps you connected to what matters most in our madrasah community.'
+    title: 'Pusat Berita',
+    description: 'Dapatkan informasi terkini mengenai liputan kegiatan, prestasi siswa, dan momen seru lainnya di lingkungan MAN 1 Kota Bengkulu.'
   },
   {
     icon: MessageCircle,
     title: 'Feedback Portal',
-    description: 'Your voice matters to us. Share your ideas, suggestions, and concerns through our dedicated feedback system, ensuring every student has a platform to contribute to OSMANSA\'s growth.'
+    description: 'Sampaikan ide, kritik, maupun saranmu secara langsung melalui platform ini untuk membantu OSMANSA menjadi lebih baik.'
   }
 ];
 
