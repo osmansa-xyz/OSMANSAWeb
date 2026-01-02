@@ -30,7 +30,7 @@ const departments: Department[] = [
     workPrograms: [
       {
         title: 'Bulan Bahasa',
-        description: 'Comprehensive overhaul of digital presence including website redesign, social media strategy optimization, and implementation of content management systems to increase engagement by 200%'
+        description: 'Wadah kreativitas siswa dalam bidang literasi dan seni melalui kompetisi mendongeng, menulis esai, hingga uji wawasan di Ranking 1. Program ini juga mengasah bakat visual melalui lomba desain maskot guna meningkatkan kecintaan terhadap bahasa dan budaya.'
       }
     ]
   },
@@ -49,11 +49,11 @@ const departments: Department[] = [
     workPrograms: [
       {
         title: 'Maulid Nabi',
-        description: 'Week-long Islamic New Year celebration featuring Islamic competitions, motivational lectures by renowned scholars, Quranic recitation contests, and community service initiatives to welcome the new Hijri year'
+        description: 'Kegiatan religius untuk memperingati hari kelahiran Nabi Muhammad SAW sebagai momentum meneladani akhlak mulia Rasulullah. Acara ini diisi dengan tausiyah untuk mempererat ukhuwah.'
       },
       {
         title: 'Isra Miraj',
-        description: 'Structured Quran memorization program connecting students with qualified mentors, providing weekly guidance sessions, progress tracking, and creating a supportive environment for spiritual growth'
+        description: 'Peringatan perjalanan agung Nabi Muhammad SAW yang bertujuan untuk merefleksikan kembali makna ibadah salat dalam kehidupan sehari-hari. Melalui kajian spiritual ini, diharapkan siswa dapat meningkatkan disiplin diri dan memperdalam kedekatan kepada Allah SWT.'
       },
     ]
   },
@@ -72,7 +72,7 @@ const departments: Department[] = [
     workPrograms: [
       {
         title: 'Liga MAN',
-        description: 'Annual multi-sport tournament featuring futsal, basketball, badminton, and table tennis competitions that foster school spirit, discover athletic talent, and promote healthy lifestyle among students'
+        description: 'Ajang kompetisi olahraga tahunan yang mempertemukan antar-kelas dalam semangat sportivitas dan kerjasama tim. Kegiatan ini menjadi sarana penyaluran bakat atletik sekaligus memperkuat rasa solidaritas dan persaudaraan antar-siswa.'
       }
     ]
   },
@@ -92,7 +92,7 @@ const departments: Department[] = [
     workPrograms: [
       {
         title: 'MATSAMA',
-        description: 'Implementation of QR-code based inventory tracking system, online equipment reservation platform, and digital database for all OSMANSA assets to improve transparency and accessibility'
+        description: 'Masa Taaruf Siswa Madrasah yang dirancang untuk membantu siswa baru mengenal lingkungan sekolah, sistem belajar, dan budaya madrasah. Program ini bertujuan membekali siswa dengan mentalitas berprestasi serta memudahkan mereka beradaptasi di lingkungan baru.'
       }
     ]
   }
