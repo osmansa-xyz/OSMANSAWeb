@@ -37,23 +37,14 @@ const departments: Department[] = [
     Koordinator: 'Syauqi Raudhah Firdaus',
     members: ['Muhammad Alfikri', 'Chesha Kinah Ramadani'],
     jobDescription: [
-      'Membuat konten visual/audio seperti foto, video, atau desain untuk mempublikasikan kegiatan.',
-      'Membuat poster peringatan hari-hari besar keagamaan dan hari-hari besar nasional.',
-      'Mengelola media sosial agar tetap aktif dan informatif.',
-      'Membuat pengumuman terkait kegiatan, barang hilang, dsb.'
+      'Menyusun konten visual dan audio-visual berkualitas (foto, video, dan desain grafis) untuk mendokumentasikan serta mempublikasikan kegiatan.',
+      'Merancang poster peringatan hari besar nasional maupun keagamaan, serta menyebarkan pengumuman penting, seperti informasi kegiatan, kehilangan barang, dan pemberitahuan resmi lainnya.',
+      'Mengelola dan mengoptimalkan platform digital OSMANSA agar tetap aktif, edukatif, dan menjadi sarana informasi utama bagi seluruh siswa.'
     ],
     workPrograms: [
       {
-        title: 'OSMANSA Digital Transformation',
+        title: 'Bulan Bahasa',
         description: 'Comprehensive overhaul of digital presence including website redesign, social media strategy optimization, and implementation of content management systems to increase engagement by 200%'
-      },
-      {
-        title: 'Monthly Campus Newsletter',
-        description: 'Production and distribution of "Al-Khabar OSMANSA" - a professional newsletter featuring student achievements, upcoming events, inspirational Islamic content, and organizational updates'
-      },
-      {
-        title: 'Photography & Videography Excellence',
-        description: 'Professional documentation of all major events, creation of promotional videos, and establishment of a comprehensive digital archive showcasing OSMANSA\'s activities and milestones'
       }
     ]
   },
@@ -66,23 +57,18 @@ const departments: Department[] = [
     Koordinator: 'El Fahri Pradipta',
     members: ['Adella Hesti Mullansari', 'Anggun Rahmadani', 'Muhammad Faizul Haq', 'Carine Syahira Zahwa'],
     jobDescription: [
-      'Megatur jadwal pelaksanaan sholat dhuha dan tadarus pagi .',
-      'Membacakan hadist di masjid ketika jeda iqomah dzuhur.',
-      'Menjadi MC ketika pelaksanaan kegiatan.'
+      'Mengatur jadwal dan teknis pelaksanaan ibadah rutin madrasah, termasuk koordinasi Shalat Dhuha, tadarus pagi, dan pembacaan hadist di masjid.',
+      'Bertindak sebagai pemandu acara (Master of Ceremony) dalam berbagai kegiatan resmi.'
     ],
     workPrograms: [
       {
-        title: 'Gema Muharram Festival',
+        title: 'Maulid Nabi',
         description: 'Week-long Islamic New Year celebration featuring Islamic competitions, motivational lectures by renowned scholars, Quranic recitation contests, and community service initiatives to welcome the new Hijri year'
       },
       {
-        title: 'Tahfidz Mentorship Program',
+        title: 'Isra Miraj',
         description: 'Structured Quran memorization program connecting students with qualified mentors, providing weekly guidance sessions, progress tracking, and creating a supportive environment for spiritual growth'
       },
-      {
-        title: 'Friday Inspiration Series',
-        description: 'Weekly Islamic discussion forums featuring diverse topics from contemporary issues to classical scholarship, encouraging critical thinking while strengthening Islamic identity and understanding'
-      }
     ]
   },
   {
@@ -94,24 +80,13 @@ const departments: Department[] = [
     Koordinator: 'Zlatan Rahcel Sudarsono',
     members: ['Muhammad Ahza Bayhaqi', 'Azza Fadillah Permata Juri', 'Muhammad Daffa Khairan'],
     jobDescription: [
-      'Menjaga keamanan sekitar area sekolah.',
-      'Mempersiapkan event olahraga .',
-      'Memimpin senam setiap KJP Jumat Sehat.',
-      'Koordinator event Liga MAN.',
-      'Menjaga parkiran dan menjaga keamanan sekitar lokasi kegiatan'
+      'Menjaga ketertiban dan keamanan di area sekolah secara rutin maupun saat kegiatan berlangsung.',
+      'Memimpin pelaksanaan senam bersama pada agenda KJP Jumat Sehat untuk meningkatkan kebugaran seluruh warga madrasah.'
     ],
     workPrograms: [
       {
-        title: 'OSMANSA Sports Championship',
+        title: 'Liga MAN',
         description: 'Annual multi-sport tournament featuring futsal, basketball, badminton, and table tennis competitions that foster school spirit, discover athletic talent, and promote healthy lifestyle among students'
-      },
-      {
-        title: 'Health & Wellness Campaign',
-        description: 'Comprehensive program including nutrition workshops, mental health awareness sessions, fitness challenges, and collaboration with health professionals to educate students on maintaining balanced, healthy lifestyles'
-      },
-      {
-        title: 'Morning Exercise Movement',
-        description: 'Weekly communal exercise sessions every Friday morning featuring aerobics, traditional sports, and group activities designed to energize students, build community bonds, and establish healthy habits'
       }
     ]
   },
@@ -122,24 +97,16 @@ const departments: Department[] = [
     color: 'from-green-500 to-green-600',
     bgColor: 'bg-green-50',
     Koordinator: 'Leo Prabowo',
-    members: ['Bunga Dzahirah', 'Muhammad Raihan Almico Chandra Dinata', 'Alfaizah Luthfia Sutama'],
+    members: ['Bunga Dzahirah', 'M. Raihan Almico Chandra Dinata', 'Alfaizah Luthfia Sutama'],
     jobDescription: [
-      'Menyiapkan, mengatur, dan memastikan semua perlengkapan kegiatan tersedia dan berfungsi dengan baik.',
-      'Memutar lagu Indonesia Raya pada hari senin dan kamis pukul 10.00 WIB.',
-      'Membacakan teks Pancasila  pada hari selasa dan jumat pukul 10.00 WIB.'
+      'Menyiapkan, mengatur, dan memastikan seluruh peralatan pendukung kegiatan tersedia dalam kondisi prima dan siap pakai.',
+      'Bertanggung jawab atas pemutaran lagu kebangsaan Indonesia Raya setiap hari Senin dan Kamis pukul 10.00 WIB.',
+      'Bertugas membacakan teks Pancasila melalui pengeras suara sekolah pada hari Selasa dan Jumat pukul 10.00 WIB.'
     ],
     workPrograms: [
       {
-        title: 'Digital Asset Management System',
+        title: 'MATSAMA',
         description: 'Implementation of QR-code based inventory tracking system, online equipment reservation platform, and digital database for all OSMANSA assets to improve transparency and accessibility'
-      },
-      {
-        title: 'Equipment Upgrade Initiative',
-        description: 'Strategic procurement plan to modernize organizational equipment including sound systems, projection equipment, sports gear, and office supplies through careful budgeting and fundraising'
-      },
-      {
-        title: 'Event Logistics Excellence',
-        description: 'Development of standardized logistics protocols, creation of event planning checklists, and training of logistics team members to ensure flawless execution of all OSMANSA programs and activities'
       }
     ]
   }
