@@ -16,9 +16,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-3xl font-bold mb-4">OSMANSA</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Organisasi Siswa Intra Madrasah Aliyah Negeri 1
-              Kota Bengkulu. Moving together, serving the
-              madrasah with faith, excellence, and dedication.
+              OSIM MAN 1 Kota Bengkulu adalah wadah utama pengembangan kepemimpinan dan kreativitas siswa di lingkungan madrasah. Kami hadir untuk menjembatani aspirasi siswa dan mewujudkan berbagai program kerja yang inovatif serta edukatif.
             </p>
             <div className="flex gap-4">
               <a
@@ -102,16 +100,16 @@ export function Footer() {
                 <span>
                   MAN 1 Kota Bengkulu
                   <br />
-                  Jl. Pendidikan, Bengkulu
+                  Jl. Cimanuk, Padang Harapan, Kec. Gading Cemp., Kota Bengkulu, Bengkulu 38225
                 </span>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Phone className="w-5 h-5 text-[#8FB935]" />
-                <span>+62 812-3456-7890</span>
+                <span>+62 8**-****-****</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Mail className="w-5 h-5 text-[#8FB935]" />
-                <span>osmansa@man1bengkulu.sch.id</span>
+                <span>osmansakotabengkulu@gmail.com</span>
               </li>
             </ul>
           </div>
