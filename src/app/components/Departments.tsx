@@ -37,9 +37,10 @@ const departments: Department[] = [
     Koordinator: 'Syauqi Raudhah Firdaus',
     members: ['Muhammad Alfikri', 'Chesha Kinah Ramadani'],
     jobDescription: [
-      'Manage all internal and external communications, ensuring OSMANSA\'s message reaches students, faculty, and the broader community effectively',
-      'Create and distribute engaging multimedia content including graphics, videos, and social media campaigns that reflect Islamic values and organizational objectives',
-      'Build and maintain positive relationships with media partners, alumni networks, and community stakeholders to enhance OSMANSA\'s reputation and outreach'
+      'Membuat konten visual/audio seperti foto, video, atau desain untuk mempublikasikan kegiatan.',
+      'Membuat poster peringatan hari-hari besar keagamaan dan hari-hari besar nasional.',
+      'Mengelola media sosial agar tetap aktif dan informatif.',
+      'Membuat pengumuman terkait kegiatan, barang hilang, dsb.'
     ],
     workPrograms: [
       {
@@ -65,9 +66,9 @@ const departments: Department[] = [
     Koordinator: 'El Fahri Pradipta',
     members: ['Adella Hesti Mullansari', 'Anggun Rahmadani', 'Muhammad Faizul Haq', 'Carine Syahira Zahwa'],
     jobDescription: [
-      'Design and implement Islamic programs that strengthen faith, deepen spiritual understanding, and promote consistent practice of religious obligations among students',
-      'Organize regular religious gatherings including Quranic studies, Islamic lectures, and spiritual mentorship sessions that inspire moral excellence and character development',
-      'Coordinate commemoration of Islamic holidays and significant religious events, ensuring meaningful celebrations that educate and unite the madrasah community'
+      'Megatur jadwal pelaksanaan sholat dhuha dan tadarus pagi .',
+      'Membacakan hadist di masjid ketika jeda iqomah dzuhur.',
+      'Menjadi MC ketika pelaksanaan kegiatan.'
     ],
     workPrograms: [
       {
@@ -93,9 +94,11 @@ const departments: Department[] = [
     Koordinator: 'Zlatan Rahcel Sudarsono',
     members: ['Muhammad Ahza Bayhaqi', 'Azza Fadillah Permata Juri', 'Muhammad Daffa Khairan'],
     jobDescription: [
-      'Organize and facilitate sports activities that promote physical fitness, healthy competition, and teamwork while maintaining Islamic principles of fair play and respect',
-      'Develop comprehensive health and wellness programs addressing physical, mental, and emotional well-being of students through workshops, screenings, and awareness campaigns',
-      'Coordinate participation in inter-school tournaments and competitions, managing team selection, training schedules, and providing necessary support for student athletes'
+      'Menjaga keamanan sekitar area sekolah.',
+      'Mempersiapkan event olahraga .',
+      'Memimpin senam setiap KJP Jumat Sehat.',
+      'Koordinator event Liga MAN.',
+      'Menjaga parkiran dan menjaga keamanan sekitar lokasi kegiatan'
     ],
     workPrograms: [
       {
@@ -121,9 +124,9 @@ const departments: Department[] = [
     Koordinator: 'Leo Prabowo',
     members: ['Bunga Dzahirah', 'Muhammad Raihan Almico Chandra Dinata', 'Alfaizah Luthfia Sutama'],
     jobDescription: [
-      'Manage inventory, procurement, and maintenance of all organizational assets including equipment, supplies, and facilities ensuring availability and optimal condition',
-      'Coordinate logistics for all OSMANSA events including venue setup, equipment deployment, transportation arrangements, and post-event breakdown with efficiency and attention to detail',
-      'Maintain comprehensive asset records, implement borrowing systems, and ensure proper storage and care of organizational property to maximize longevity and prevent loss'
+      'Menyiapkan, mengatur, dan memastikan semua perlengkapan kegiatan tersedia dan berfungsi dengan baik.',
+      'Memutar lagu Indonesia Raya pada hari senin dan kamis pukul 10.00 WIB.',
+      'Membacakan teks Pancasila  pada hari selasa dan jumat pukul 10.00 WIB.'
     ],
     workPrograms: [
       {
