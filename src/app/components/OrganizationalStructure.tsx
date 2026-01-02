@@ -8,10 +8,10 @@ export function OrganizationalStructure() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8FB935]/10 rounded-full mb-4">
             <Users className="w-4 h-4 text-[#8FB935]" />
-            <span className="text-sm text-[#8FB935]">Leadership Structure</span>
+            <span className="text-sm text-[#8FB935]">Struktur Kepemimpinan</span>
           </div>
           <h2 className="text-5xl font-bold text-gray-900 mb-6">
-            Organizational Structure
+            Struktur Organisasi
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             A clear hierarchy ensuring effective governance and coordination
@@ -23,10 +23,8 @@ export function OrganizationalStructure() {
           {/* Principal */}
           <div className="relative">
             <div className="bg-gradient-to-r from-[#8FB935] to-[#7DA82E] text-white rounded-2xl px-8 py-6 shadow-lg min-w-[280px] text-center">
-              <div className="text-sm mb-2 opacity-90">Madrasah Leadership</div>
-              <h4 className="font-bold text-xl">Principal</h4>
-              <p className="text-sm mt-2 opacity-90">Strategic Oversight</p>
-            </div>
+              <div className="text-sm mb-2 opacity-90">Kepala Madrasah</div>
+              <h4 className="font-bold text-xl">Hendri Kuswiran, M.Pd.</h4>            </div>
             {/* Vertical line */}
             <div className="absolute left-1/2 -translate-x-1/2 w-1 h-12 bg-gray-300 top-full"></div>
           </div>
@@ -34,9 +32,8 @@ export function OrganizationalStructure() {
           {/* Vice Principal */}
           <div className="relative">
             <div className="bg-white border-2 border-[#8FB935] rounded-2xl px-8 py-6 shadow-lg min-w-[280px] text-center">
-              <div className="text-sm mb-2 text-gray-600">Academic Leadership</div>
-              <h4 className="font-bold text-xl text-gray-900">Vice Principal</h4>
-              <p className="text-sm mt-2 text-gray-600">Student Affairs</p>
+              <div className="text-sm mb-2 text-gray-600">Waka Kesiswaan</div>
+              <h4 className="font-bold text-xl text-gray-900">Soewanto Jaya, S.Pd.</h4>
             </div>
             {/* Vertical line */}
             <div className="absolute left-1/2 -translate-x-1/2 w-1 h-12 bg-gray-300 top-full"></div>
@@ -45,9 +42,8 @@ export function OrganizationalStructure() {
           {/* Advisors */}
           <div className="relative">
             <div className="bg-white border-2 border-gray-300 rounded-2xl px-8 py-6 shadow-lg min-w-[280px] text-center">
-              <div className="text-sm mb-2 text-gray-600">Guidance & Mentorship</div>
-              <h4 className="font-bold text-xl text-gray-900">OSMANSA Advisors</h4>
-              <p className="text-sm mt-2 text-gray-600">Strategic Counsel</p>
+              <div className="text-sm mb-2 text-gray-600">Pembina OSMANSA</div>
+              <h4 className="font-bold text-xl text-gray-900">Yutia Gustari, S.Sn.</h4>
             </div>
             {/* Vertical line */}
             <div className="absolute left-1/2 -translate-x-1/2 w-1 h-12 bg-gray-300 top-full"></div>
@@ -56,17 +52,19 @@ export function OrganizationalStructure() {
           {/* Core Executives */}
           <div className="relative">
             <div className="bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-2xl px-8 py-6 shadow-lg min-w-[320px] text-center">
-              <div className="text-sm mb-2 opacity-90">Executive Leadership</div>
-              <h4 className="font-bold text-xl">Core Executive Board</h4>
-              <div className="grid grid-cols-3 gap-3 mt-4 text-sm">
+              <h4 className="font-bold text-xl">Inti</h4>
+              <div className="grid grid-cols-4 gap-3 mt-4 text-sm">
                 <div className="bg-white/10 rounded-lg p-2">
-                  <div className="opacity-75">Chairperson</div>
+                  <div className="opacity-75">Ketua</div>
                 </div>
                 <div className="bg-white/10 rounded-lg p-2">
-                  <div className="opacity-75">Vice Chair</div>
+                  <div className="opacity-75">Wakil Ketua</div>
                 </div>
                 <div className="bg-white/10 rounded-lg p-2">
-                  <div className="opacity-75">Secretary</div>
+                  <div className="opacity-75">Sekretaris</div>
+                </div>
+                <div className="bg-white/10 rounded-lg p-2">
+                  <div className="opacity-75">Bendahara</div>
                 </div>
               </div>
             </div>
@@ -81,17 +79,17 @@ export function OrganizationalStructure() {
               <div className="hidden lg:block absolute top-0 left-0 right-0 h-0 border-t-2 border-dashed border-gray-300 -translate-y-12"></div>
               
               {[
-                { name: 'Public Relations & Multimedia', color: 'from-blue-500 to-blue-600' },
-                { name: 'Religious Affairs', color: 'from-purple-500 to-purple-600' },
-                { name: 'Sports & Health', color: 'from-orange-500 to-orange-600' },
-                { name: 'Equipment & Logistics', color: 'from-green-500 to-green-600' }
+                { name: 'Humas Multimedia', color: 'from-blue-500 to-blue-600' },
+                { name: 'Keagamaan dan Kesenian Islami', color: 'from-purple-500 to-purple-600' },
+                { name: 'Olahraga Satuan Keamanan', color: 'from-orange-500 to-orange-600' },
+                { name: 'Perlengkapan dan Pembekalan', color: 'from-green-500 to-green-600' }
               ].map((dept, index) => (
                 <div key={index} className="relative">
                   {/* Vertical line to connect to coordination line */}
                   <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 w-1 h-12 bg-gray-300 -top-12"></div>
                   
                   <div className={`bg-gradient-to-br ${dept.color} text-white rounded-xl px-6 py-5 shadow-lg text-center`}>
-                    <div className="text-xs mb-2 opacity-90">Department Head</div>
+                    <div className="text-xs mb-2 opacity-90">Bidang</div>
                     <h5 className="font-bold text-sm leading-tight">{dept.name}</h5>
                   </div>
                 </div>
