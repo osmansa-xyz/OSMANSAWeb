@@ -7,7 +7,7 @@ export function VisionMission() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-900 mb-6">
-            Our Vision & Mission
+            Visi & Misi
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Guided by Islamic principles, driven by excellence
@@ -20,7 +20,7 @@ export function VisionMission() {
             <div className="w-16 h-16 bg-[#8FB935] rounded-2xl flex items-center justify-center mb-6">
               <Eye className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Vision</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Visi</h3>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
               Mewujudkan siswa MAN 1 Kota Bengkulu yang aktif, kreatif, dan inovatif, serta menjadikan OSIM sebagai wadah pengembangan potensi dan bakat siswa, guna membentuk generasi yang berprestasi, berkarakter, dan berkontribusi positif bagi lingkungan sekolah.            </p>
             </p>
@@ -31,7 +31,7 @@ export function VisionMission() {
             <div className="w-16 h-16 bg-gray-900 rounded-2xl flex items-center justify-center mb-6">
               <Target className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Mission</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Misi</h3>
             <div className="space-y-4">
               {[
                 'Menanamkan nilai ketakwaan sebagai fondasi utama dalam setiap kegiatan OSIM, demi membentuk siswa yang tidak hanya cerdas, tapi juga berakhlak mulia.',
