@@ -13,6 +13,20 @@ interface Department {
   workPrograms: { title: string; description: string }[];
 }
 
+interface Inti {
+  id: string;
+  name: string;
+  icon: any;
+  color: string;
+  bgColor: string;
+  Ketua: string;
+  Wakil: string;
+  Sekretaris: string;
+  Bendahara: string;
+  jobDescription: string[];
+  workPrograms: { title: string; description: string }[];
+}
+
 const departments: Department[] = [
   {
     id: 'humed',
