@@ -1,0 +1,87 @@
+import { Target, Eye, Heart } from 'lucide-react';
+
+export function VisionMission() {
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold text-gray-900 mb-6">
+            Our Vision & Mission
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Guided by Islamic principles, driven by excellence
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Vision */}
+          <div className="bg-gradient-to-br from-[#8FB935]/10 to-[#8FB935]/5 rounded-3xl p-10 border-2 border-[#8FB935]/20">
+            <div className="w-16 h-16 bg-[#8FB935] rounded-2xl flex items-center justify-center mb-6">
+              <Eye className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Vision</h3>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              To cultivate a generation of Muslim students who embody Islamic excellence, demonstrate proactive leadership, and inspire positive transformation within the madrasah and broader community.
+            </p>
+            <p className="text-gray-700 text-lg leading-relaxed">
+              We envision OSMANSA as a dynamic platform where faith, knowledge, and action converge to create meaningful impact, fostering an environment where every student can grow spiritually, intellectually, and socially.
+            </p>
+          </div>
+
+          {/* Mission */}
+          <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-10 border-2 border-gray-200">
+            <div className="w-16 h-16 bg-gray-900 rounded-2xl flex items-center justify-center mb-6">
+              <Target className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Mission</h3>
+            <div className="space-y-4">
+              {[
+                'Strengthen Islamic character and spiritual development through consistent religious programs and mentorship',
+                'Empower students to become innovative leaders who champion positive change within the madrasah ecosystem',
+                'Create inclusive platforms for creative expression, critical thinking, and collaborative problem-solving',
+                'Build strong connections between students, educators, and the community through meaningful engagement',
+                'Uphold transparency, accountability, and excellence in all organizational activities and initiatives'
+              ].map((mission, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-[#8FB935] rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white font-bold">{index + 1}</span>
+                  </div>
+                  <p className="text-gray-700 text-lg leading-relaxed flex-1">{mission}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Core Values */}
+        <div className="mt-12 bg-gradient-to-r from-[#8FB935] to-[#7DA82E] rounded-3xl p-10 text-white">
+          <div className="text-center mb-8">
+            <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Heart className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-3xl font-bold mb-4">Core Values</h3>
+            <p className="text-white/90 text-lg">The principles that guide everything we do</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            {[
+              { title: 'Islamic Excellence', description: 'Rooted in faith' },
+              { title: 'Integrity', description: 'Honest and transparent' },
+              { title: 'Innovation', description: 'Creative solutions' },
+              { title: 'Inclusivity', description: 'Everyone belongs' },
+              { title: 'Service', description: 'Serving with purpose' }
+            ].map((value, index) => (
+              <div key={index} className="text-center">
+                <div className="bg-white/20 rounded-xl p-6 backdrop-blur-sm hover:bg-white/30 transition-all">
+                  <h4 className="font-bold text-lg mb-2">{value.title}</h4>
+                  <p className="text-white/80 text-sm">{value.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
