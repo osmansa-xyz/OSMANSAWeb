@@ -22,10 +22,7 @@ export function VisionMission() {
             </div>
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Vision</h3>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              To cultivate a generation of Muslim students who embody Islamic excellence, demonstrate proactive leadership, and inspire positive transformation within the madrasah and broader community.
-            </p>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              We envision OSMANSA as a dynamic platform where faith, knowledge, and action converge to create meaningful impact, fostering an environment where every student can grow spiritually, intellectually, and socially.
+              Mewujudkan siswa MAN 1 Kota Bengkulu yang aktif, kreatif, dan inovatif, serta menjadikan OSIM sebagai wadah pengembangan potensi dan bakat siswa, guna membentuk generasi yang berprestasi, berkarakter, dan berkontribusi positif bagi lingkungan sekolah.            </p>
             </p>
           </div>
 
@@ -37,11 +34,11 @@ export function VisionMission() {
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Mission</h3>
             <div className="space-y-4">
               {[
-                'Strengthen Islamic character and spiritual development through consistent religious programs and mentorship',
-                'Empower students to become innovative leaders who champion positive change within the madrasah ecosystem',
-                'Create inclusive platforms for creative expression, critical thinking, and collaborative problem-solving',
-                'Build strong connections between students, educators, and the community through meaningful engagement',
-                'Uphold transparency, accountability, and excellence in all organizational activities and initiatives'
+                'Menanamkan nilai ketakwaan sebagai fondasi utama dalam setiap kegiatan OSIM, demi membentuk siswa yang tidak hanya cerdas, tapi juga berakhlak mulia.',
+                'Menyelenggarakan kegiatan yang edukatif serta kreatif demi pengembangan bakat dan potensi siswa, sekaligus mendorong semangat berprestasi di lingkungan madrasah.',
+                'Menjadikan OSIM sebagai wadah aspirasi siswa dan menjembatani komunikasi antara siswa dengan pihak sekolah, agar setiap suara dan pendapat siswa dapat ditampung dan dipertimbangkan secara adil.',
+                'Meneruskan program kerja OSIM yang positif, dengan penyesuaian dan penyempurnaan guna memberikan dampak positif yang lebih luas bagi seluruh warga madrasah.',
+                'Mewujudkan kepengurusan OSIM yang berdedikasi tinggi, sehingga seluruh anggota dapat menjadi teladan dalam bersikap, berorganisasi, dan berkontribusi di lingkungan madrasah.'
               ].map((mission, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-[#8FB935] rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
