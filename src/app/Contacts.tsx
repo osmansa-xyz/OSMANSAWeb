@@ -96,10 +96,12 @@ export function Contacts() {
             
             {/* UPDATE: Tambahkan ACTION dan METHOD */}
             <form 
-              action="https://api.sheetmonkey.io/form/g9SBVdkyZmbVqctDtuFEd1" // Ganti dengan URL Formspree atau SheetMonkey Anda
+              action="https://api.sheetmonkey.io/form/g9SBVdkyZmbVqctDtuFEd1" 
               method="POST"
               className="space-y-6"
             >
+              <input type="hidden" name="x-sheetmonkey-redirect" value="https://osmansakotabengkulu.xyz/" />
+              
               {/* Name */}
               <div>
                 <label htmlFor="name" className="block text-gray-900 mb-2">Nama Lengkap</label>
