@@ -4,16 +4,12 @@ import { ChevronLeft, ChevronRight, Calendar as CalendarIcon } from 'lucide-reac
 interface Event {
   date: number;
   title: string;
-  type: 'religious' | 'academic' | 'sports' | 'general';
+  type: 'religious' | 'holiday' | 'sports' | 'general';
 }
 
 const events: Event[] = [
-  { date: 5, title: 'OSMANSA Monthly Meeting', type: 'general' },
-  { date: 12, title: 'Islamic Studies Workshop', type: 'religious' },
-  { date: 18, title: 'Sports Tournament Opening', type: 'sports' },
-  { date: 21, title: 'Gema Muharram Festival', type: 'religious' },
-  { date: 25, title: 'Student Leadership Conference', type: 'academic' },
-  { date: 28, title: 'Community Service Day', type: 'general' }
+  { date: 15, title: 'Peringatan Isra Miraj', type: 'religious' },
+  { date: 16, title: 'Isra Miraj', type: 'holiday' }
 ];
 
 export function SmartCalendar() {
@@ -147,7 +143,7 @@ export function SmartCalendar() {
                         <span className={`
                           inline-block text-xs px-2 py-1 rounded-full
                           ${event.type === 'religious' ? 'bg-purple-100 text-purple-700' : ''}
-                          ${event.type === 'academic' ? 'bg-blue-100 text-blue-700' : ''}
+                          ${event.type === 'holiday' ? 'bg-blue-100 text-blue-700' : ''}
                           ${event.type === 'sports' ? 'bg-orange-100 text-orange-700' : ''}
                           ${event.type === 'general' ? 'bg-gray-200 text-gray-700' : ''}
                         `}>
