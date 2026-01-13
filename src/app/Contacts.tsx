@@ -4,18 +4,13 @@ export function Contacts() {
   return (
     <section className="py-24 bg-gradient-to-br from-[#8FB935]/5 via-white to-[#8FB935]/10">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
+        {/* Header Tetap Sama */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8FB935]/10 rounded-full mb-4">
             <MessageSquare className="w-4 h-4 text-[#8FB935]" />
             <span className="text-sm font-medium text-[#8FB935]">Hubungi Kami</span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">
-            Kontak OSMANSA
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Punya pertanyaan, saran, atau ingin berkolaborasi? Jangan ragu untuk menghubungi kami!
-          </p>
+          <h2 className="text-5xl font-bold text-gray-900 mb-6">Kontak OSMANSA</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -95,19 +90,24 @@ export function Contacts() {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Form Kontak (Kanan) */}
           <div className="bg-white rounded-3xl border-2 border-gray-100 p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Kirim Pesan</h3>
             
-            <form className="space-y-6">
+            {/* UPDATE: Tambahkan ACTION dan METHOD */}
+            <form 
+              action="https://formspree.io/f/XXXXX" // Ganti dengan URL Formspree atau SheetMonkey Anda
+              method="POST"
+              className="space-y-6"
+            >
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-gray-900 mb-2">
-                  Nama Lengkap
-                </label>
+                <label htmlFor="name" className="block text-gray-900 mb-2">Nama Lengkap</label>
                 <input
                   type="text"
                   id="name"
+                  name="nama_lengkap" // TAMBAHKAN NAME
+                  required           // TAMBAHKAN REQUIRED
                   placeholder="Masukkan nama lengkap Anda"
                   className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-[#8FB935] focus:bg-white outline-none transition-all"
                 />
@@ -115,12 +115,12 @@ export function Contacts() {
 
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-gray-900 mb-2">
-                  Email
-                </label>
+                <label htmlFor="email" className="block text-gray-900 mb-2">Email</label>
                 <input
                   type="email"
                   id="email"
+                  name="email"      // TAMBAHKAN NAME
+                  required           // TAMBAHKAN REQUIRED
                   placeholder="nama@email.com"
                   className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-[#8FB935] focus:bg-white outline-none transition-all"
                 />
@@ -128,12 +128,11 @@ export function Contacts() {
 
               {/* Subject */}
               <div>
-                <label htmlFor="subject" className="block text-gray-900 mb-2">
-                  Subjek
-                </label>
+                <label htmlFor="subject" className="block text-gray-900 mb-2">Subjek</label>
                 <input
                   type="text"
                   id="subject"
+                  name="subjek"     // TAMBAHKAN NAME
                   placeholder="Perihal pesan Anda"
                   className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-[#8FB935] focus:bg-white outline-none transition-all"
                 />
@@ -141,11 +140,11 @@ export function Contacts() {
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-gray-900 mb-2">
-                  Pesan
-                </label>
+                <label htmlFor="message" className="block text-gray-900 mb-2">Pesan</label>
                 <textarea
                   id="message"
+                  name="pesan"      // TAMBAHKAN NAME
+                  required           // TAMBAHKAN REQUIRED
                   rows={5}
                   placeholder="Tuliskan pesan, saran, atau pertanyaan Anda di sini..."
                   className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-[#8FB935] focus:bg-white outline-none transition-all resize-none"
