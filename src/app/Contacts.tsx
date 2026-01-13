@@ -61,7 +61,7 @@ export function Contacts() {
                 <input
                   type="text"
                   id="name"
-                  name="nama_lengkap"
+                  name="name"
                   required
                   placeholder="Masukkan nama lengkap Anda"
                   className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-[#8FB935] focus:bg-white outline-none transition-all"
@@ -85,7 +85,7 @@ export function Contacts() {
                 <input
                   type="text"
                   id="subject"
-                  name="subjek"
+                  name="subject"
                   placeholder="Perihal pesan Anda"
                   className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-[#8FB935] focus:bg-white outline-none transition-all"
                 />
@@ -95,7 +95,7 @@ export function Contacts() {
                 <label htmlFor="message" className="block text-gray-900 mb-2">Pesan</label>
                 <textarea
                   id="message"
-                  name="pesan"
+                  name="message"
                   required
                   rows={5}
                   placeholder="Tuliskan pesan Anda di sini..."
