@@ -5,15 +5,15 @@ interface Event {
   startDate: string; // YYYY-MM-DD
   endDate?: string;  // YYYY-MM-DD (opsional)
   title: string;
-  type: 'religious' | 'holiday' | 'sports' | 'general';
+  type: 'Keagamaan' | 'Hari Libur' | 'Olahraga' | 'Umum';
 }
 
 const events: Event[] = [
-  { startDate: '2025-08-17', title: 'HUT RI Ke-80', type: 'holiday' },
-  { startDate: '2025-08-19', title: 'Sertijab', type: 'general' },
-  { startDate: '2025-12-08', endDate: '2025-12-18', title: 'Liga MAN', type: 'sports' },
-  { startDate: '2026-01-15', endDate: '2026-01-16', title: 'Peringatan Isra Miraj', type: 'religious' },
-  { startDate: '2026-08-17', title: 'HUT RI Ke-81', type: 'holiday' },
+  { startDate: '2025-08-17', title: 'HUT RI Ke-80', type: 'Hari Libur' },
+  { startDate: '2025-08-19', title: 'Sertijab', type: 'Umum' },
+  { startDate: '2025-12-08', endDate: '2025-12-18', title: 'Liga MAN', type: 'Olahraga' },
+  { startDate: '2026-01-15', endDate: '2026-01-16', title: 'Peringatan Isra Miraj', type: 'Keagamaan' },
+  { startDate: '2026-08-17', title: 'HUT RI Ke-81', type: 'Hari Libur' },
 ];
 
 export function SmartCalendar() {
@@ -92,9 +92,9 @@ export function SmartCalendar() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8FB935]/10 rounded-full mb-4">
             <CalendarIcon className="w-4 h-4 text-[#8FB935]" />
-            <span className="text-sm text-[#8FB935]">OSMANSA Schedule</span>
+            <span className="text-sm text-[#8FB935]">Jadwal OSMANSA</span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">Smart Calendar</h2>
+          <h2 className="text-5xl font-bold text-gray-900 mb-6">Kalender Kegiatan</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
