@@ -49,12 +49,12 @@ export function Contacts() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Kirim Pesan</h3>
             
             <form 
-              action="https://api.sheetmonkey.io/form/f2DHQyLWKVnEEQBFEUQ8Le" 
+              action="https://formspree.io/f/xvzzowro" 
               method="POST"
               className="space-y-6"
             >
               {/* Redirect agar tidak blank setelah kirim */}
-              <input type="hidden" name="x-sheetmonkey-redirect" value="https://osmansakotabengkulu.xyz/" />
+              <input type="hidden" name="_next" value="https://osmansakotabengkulu.xyz/" />
 
               <div>
                 <label htmlFor="name" className="block text-gray-900 mb-2">Nama Lengkap</label>
