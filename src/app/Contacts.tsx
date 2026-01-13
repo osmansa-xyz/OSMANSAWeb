@@ -49,7 +49,7 @@ export function Contacts() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Kirim Pesan</h3>
             
             <form 
-              action="https://api.sheetmonkey.io/form/g9SBVdkyZmbVqctDtuFEd1" 
+              action="https://api.sheetmonkey.io/form/f2DHQyLWKVnEEQBFEUQ8Le" 
               method="POST"
               className="space-y-6"
             >
