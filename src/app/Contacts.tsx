@@ -96,7 +96,7 @@ export function Contacts() {
             
             {/* UPDATE: Tambahkan ACTION dan METHOD */}
             <form 
-              action="https://formspree.io/f/XXXXX" // Ganti dengan URL Formspree atau SheetMonkey Anda
+              action="https://api.sheetmonkey.io/form/g9SBVdkyZmbVqctDtuFEd1" // Ganti dengan URL Formspree atau SheetMonkey Anda
               method="POST"
               className="space-y-6"
             >
