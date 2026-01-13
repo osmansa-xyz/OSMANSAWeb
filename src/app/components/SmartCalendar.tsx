@@ -9,6 +9,17 @@ interface Event {
 
 const events: Event[] = [
   { date: '2025-08-17', title: 'HUT RI Ke-80', type: 'holiday' },
+  { date: '2025-08-19', title: 'Sertijab', type: 'general'},
+  { date: '2025-12-08', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-09', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-10', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-11', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-12', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-13', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-15', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-16', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-17', title: 'Liga MAN', type: 'sports'},
+  { date: '2025-12-18', title: 'Liga MAN', type: 'sports'},
   { date: '2026-01-15', title: 'Peringatan Isra Miraj', type: 'religious' },
   { date: '2026-01-16', title: 'Libur Isra Miraj', type: 'holiday' },
   { date: '2026-08-17', title: 'HUT RI Ke-81', type: 'general' },
