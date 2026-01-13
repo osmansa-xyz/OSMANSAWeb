@@ -2,27 +2,17 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Clock } from 'lucide-react';
 
 interface Event {
-  date: string; // Format: YYYY-MM-DD agar mudah dibandingkan
+  startDate: string; // YYYY-MM-DD
+  endDate?: string;  // YYYY-MM-DD (opsional)
   title: string;
   type: 'religious' | 'holiday' | 'sports' | 'general';
 }
 
 const events: Event[] = [
-  { date: '2025-08-17', title: 'HUT RI Ke-80', type: 'holiday' },
-  { date: '2025-08-19', title: 'Sertijab', type: 'general'},
-  { date: '2025-12-08', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-09', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-10', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-11', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-12', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-13', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-15', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-16', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-17', title: 'Liga MAN', type: 'sports'},
-  { date: '2025-12-18', title: 'Liga MAN', type: 'sports'},
-  { date: '2026-01-15', title: 'Peringatan Isra Miraj', type: 'religious' },
-  { date: '2026-01-16', title: 'Libur Isra Miraj', type: 'holiday' },
-  { date: '2026-08-17', title: 'HUT RI Ke-81', type: 'general' },
+  { startDate: '2025-08-17', title: 'HUT RI Ke-80', type: 'holiday' },
+  { startDate: '2025-12-08', endDate: '2025-12-18', title: 'Liga MAN', type: 'sports' },
+  { startDate: '2026-01-15', endDate: '2026-01-16', title: 'Isra Miraj', type: 'religious' },
+  { startDate: '2026-08-17', title: 'HUT RI Ke-81', type: 'holiday'}
 ];
 
 export function SmartCalendar() {
