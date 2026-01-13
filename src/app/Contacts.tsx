@@ -53,8 +53,6 @@ export function Contacts() {
               method="POST"
               className="space-y-6"
             >
-              {/* Redirect agar tidak blank setelah kirim */}
-              <input type="hidden" name="_next" value="https://osmansakotabengkulu.xyz/" />
 
               <div>
                 <label htmlFor="name" className="block text-gray-900 mb-2">Nama Lengkap</label>
