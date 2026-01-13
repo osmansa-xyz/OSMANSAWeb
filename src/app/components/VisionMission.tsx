@@ -7,7 +7,7 @@ export function VisionMission() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-900 mb-6">
-            Our Vision & Mission
+            Visi & Misi Kami
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Guided by Islamic principles, driven by excellence
