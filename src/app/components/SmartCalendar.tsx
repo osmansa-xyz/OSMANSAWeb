@@ -17,7 +17,7 @@ export function SmartCalendar() {
   
   const monthName = 'January 2026';
   const daysInMonth = 31;
-  const startDay = 3; // January 1, 2026 starts on Wednesday (0=Sunday)
+  const startDay = 4; // January 1, 2026 starts on Thursday (0=Sunday)
   
   const weeks: (number | null)[][] = [];
   let currentWeek: (number | null)[] = new Array(startDay).fill(null);
