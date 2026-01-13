@@ -110,7 +110,7 @@ export function Departments() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-900 mb-6">
-            Our Departments
+            Bidang
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Specialized teams working together to serve the madrasah community
