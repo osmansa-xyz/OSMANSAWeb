@@ -49,7 +49,7 @@ export function Contacts() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Kirim Pesan</h3>
             
             <form 
-              action="https://script.google.com/macros/s/AKfycbw2SpDL4b-rmsFs4seQqxcmIc9Fd5TNiukokbTa_Tw5nQXaXNKbpMmNPBVhBP44XxyxOQ/exec" 
+              action="https://script.google.com/macros/s/AKfycbwhferfVngzCUBNoSn-tklF_xJmTTz1etW94lw6W5jUqZCLbhjnePJw3RN_m7KgFlmNWQ/exec" 
               method="POST"
               className="space-y-6"
             >
