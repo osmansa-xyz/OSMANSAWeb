@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Clock } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Clock } from 'lucide-center'; // Pastikan library sudah terinstall
 
 interface Event {
-  startDate: string; // YYYY-MM-DD
-  endDate?: string;  // YYYY-MM-DD (opsional)
+  startDate: string;
+  endDate?: string;
   title: string;
   type: 'Keagamaan' | 'Hari Libur' | 'Olahraga' | 'Umum';
 }
@@ -26,9 +26,6 @@ export function SmartCalendar() {
   const year = viewDate.getFullYear();
   const monthName = viewDate.toLocaleString('id-ID', { month: 'long', year: 'numeric' });
 
-  // --- LOGIKA HELPER ---
-  
-  // Mengecek apakah suatu tanggal masuk dalam range event
   const isDateInEvent = (day: number) => {
     const checkDate = new Date(year, month, day);
     checkDate.setHours(0, 0, 0, 0);
@@ -43,7 +40,6 @@ export function SmartCalendar() {
     });
   };
 
-  // Filter event untuk list di samping (sidebar)
   const currentMonthEvents = events.filter(event => {
     const start = new Date(event.startDate);
     const end = event.endDate ? new Date(event.endDate) : start;
@@ -52,8 +48,6 @@ export function SmartCalendar() {
 
     return (start <= viewEnd && end >= viewStart);
   });
-
-  // --- LOGIKA KALENDER ---
 
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const startDay = new Date(year, month, 1).getDay();
@@ -93,9 +87,9 @@ export function SmartCalendar() {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#8FB935]/10 rounded-full mb-4">
             <CalendarIcon className="w-4 h-4 text-[#8FB935]" />
             <span className="text-sm text-[#8FB935]">Jadwal OSMANSA</span>
-          </div>>
+          </div>
           <h2 className="text-5xl font-bold text-gray-900 mb-6">Kalender Kegiatan</h2>
-        </div>>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
@@ -108,54 +102,53 @@ export function SmartCalendar() {
                 <button onClick={nextMonth} disabled={viewDate >= maxDate} className="p-2 hover:bg-white/20 rounded-lg disabled:opacity-30">
                   <ChevronRight className="w-6 h-6" />
                 </button>
-              </div>>
+              </div>
 
               <div className="p-8">
                 <div className="grid grid-cols-7 gap-2 mb-4">
                   {['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'].map((d, index) => (
                     <div key={d} className={`text-center text-xs font-bold uppercase ${index === 0 ? 'text-red-500' : 'text-gray-400'}`}>
                       {d}
-                    </div>>
+                    </div>
                   ))}
-                </div>>
+                </div>
 
                 <div className="space-y-2">
                   {weeks.map((week, wi) => (
                     <div key={wi} className="grid grid-cols-7 gap-2">
                       {week.map((day, di) => {
                         const hasEv = day ? isDateInEvent(day) : false;
-                        const isSunday = di === 0; // Cek apakah indeks kolom adalah 0 (Minggu)
+                        const isSunday = di === 0;
 
                         return (
                           <div key={di} className={`aspect-square flex flex-col items-center justify-center rounded-xl transition-all border 
-                          ${day ? 'hover:bg-gray-50 cursor-pointer' : 'border-transparent'}
-                          ${hasEv ? 'bg-[#8FB935]/10 border-[#8FB935]/40' : 'border-gray-50'}`}>
-                          
-                          {day && (
-                            <>
-                              <span className={`font-medium 
-                                ${hasEv ? 'text-[#8FB935]' : isSunday ? 'text-red-600' : 'text-gray-700'}`}>
-                                {day}
-                              </span>
-                              {hasEv && <div className="w-1.5 h-1.5 bg-[#8FB935] rounded-full mt-1"></div>>}
-                            </>
-                          )}
-                        </div>
-                      );
-                    })}
-                    </div>>
+                            ${day ? 'hover:bg-gray-50 cursor-pointer' : 'border-transparent'}
+                            ${hasEv ? 'bg-[#8FB935]/10 border-[#8FB935]/40' : 'border-gray-50'}`}>
+                            
+                            {day && (
+                              <>
+                                <span className={`font-medium ${hasEv ? 'text-[#8FB935]' : isSunday ? 'text-red-600' : 'text-gray-700'}`}>
+                                  {day}
+                                </span>
+                                {hasEv && <div className="w-1.5 h-1.5 bg-[#8FB935] rounded-full mt-1"></div>}
+                              </>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
                   ))}
-                </div>>
-              </div>>
-            </div>>
-          </div>>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="lg:col-span-1">
             <div className="bg-white rounded-3xl shadow-lg border-2 border-gray-100 p-6 sticky top-6">
               <div className="flex items-center gap-2 mb-6">
                 {isPastMonth ? <Clock className="w-5 h-5 text-gray-400" /> : <CalendarIcon className="w-5 h-5 text-[#8FB935]" />}
                 <h4 className="text-xl font-bold text-gray-900">{isPastMonth ? 'Event Berlalu' : 'Event Mendatang'}</h4>
-              </div>>
+              </div>
               
               <div className="space-y-4">
                 {currentMonthEvents.length > 0 ? (
@@ -165,25 +158,25 @@ export function SmartCalendar() {
                         <div className={`w-12 h-12 rounded-lg flex flex-col items-center justify-center flex-shrink-0 text-white ${isPastMonth ? 'bg-gray-400' : 'bg-[#8FB935]'}`}>
                           <span className="text-[10px] uppercase font-bold">{new Date(event.startDate).toLocaleString('id-ID', { month: 'short' })}</span>
                           <span className="font-bold leading-none">{new Date(event.startDate).getDate()}</span>
-                        </div>>
+                        </div>
                         <div>
                           <h5 className="font-bold text-gray-900 leading-tight mb-1">{event.title}</h5>
                           <p className="text-[10px] text-gray-500 mb-1">
                             {event.endDate ? `${new Date(event.startDate).getDate()} - ${new Date(event.endDate).getDate()} ${monthName}` : 'Satu Hari'}
                           </p>
                           <span className="text-[10px] px-2 py-0.5 rounded-full bg-white border border-gray-200 text-gray-500 uppercase font-semibold">{event.type}</span>
-                        </div>>
-                      </div>>
-                    </div>>
+                        </div>
+                      </div>
+                    </div>
                   ))
                 ) : (
-                  <div className="text-center py-8 text-gray-400 italic text-sm">Tidak ada event bulan ini.</div>>
+                  <div className="text-center py-8 text-gray-400 italic text-sm">Tidak ada event bulan ini.</div>
                 )}
-              </div>>
-            </div>>
-          </div>>
-        </div>>
-      </div>>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
