@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Clock } from 'lucide-center'; // Pastikan library sudah terinstall
+import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Clock } from 'lucide-react';
 
 interface Event {
   startDate: string;
@@ -35,7 +35,6 @@ export function SmartCalendar() {
       start.setHours(0, 0, 0, 0);
       const end = event.endDate ? new Date(event.endDate) : start;
       end.setHours(0, 0, 0, 0);
-      
       return checkDate >= start && checkDate <= end;
     });
   };
@@ -45,7 +44,6 @@ export function SmartCalendar() {
     const end = event.endDate ? new Date(event.endDate) : start;
     const viewStart = new Date(year, month, 1);
     const viewEnd = new Date(year, month + 1, 0);
-
     return (start <= viewEnd && end >= viewStart);
   });
 
@@ -77,7 +75,6 @@ export function SmartCalendar() {
   };
 
   const today = new Date();
-  today.setHours(0, 0, 0, 0);
   const isPastMonth = viewDate < new Date(today.getFullYear(), today.getMonth(), 1);
 
   return (
@@ -119,12 +116,10 @@ export function SmartCalendar() {
                       {week.map((day, di) => {
                         const hasEv = day ? isDateInEvent(day) : false;
                         const isSunday = di === 0;
-
                         return (
                           <div key={di} className={`aspect-square flex flex-col items-center justify-center rounded-xl transition-all border 
                             ${day ? 'hover:bg-gray-50 cursor-pointer' : 'border-transparent'}
                             ${hasEv ? 'bg-[#8FB935]/10 border-[#8FB935]/40' : 'border-gray-50'}`}>
-                            
                             {day && (
                               <>
                                 <span className={`font-medium ${hasEv ? 'text-[#8FB935]' : isSunday ? 'text-red-600' : 'text-gray-700'}`}>
@@ -149,7 +144,6 @@ export function SmartCalendar() {
                 {isPastMonth ? <Clock className="w-5 h-5 text-gray-400" /> : <CalendarIcon className="w-5 h-5 text-[#8FB935]" />}
                 <h4 className="text-xl font-bold text-gray-900">{isPastMonth ? 'Event Berlalu' : 'Event Mendatang'}</h4>
               </div>
-              
               <div className="space-y-4">
                 {currentMonthEvents.length > 0 ? (
                   currentMonthEvents.map((event, i) => (
