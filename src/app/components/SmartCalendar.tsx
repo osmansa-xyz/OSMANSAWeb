@@ -13,7 +13,7 @@ const events: Event[] = [
   { startDate: '2025-08-19', title: 'Sertijab', type: 'Umum' },
   { startDate: '2025-12-08', endDate: '2025-12-18', title: 'Liga MAN', type: 'Olahraga' },
   { startDate: '2026-01-15', endDate: '2026-01-16', title: 'Peringatan Isra Miraj', type: 'Keagamaan' },
-  { startDate: '2026-08-17', title: 'HUT RI Ke-81', type: 'Hari Libur' },
+  { startDate: '2026-08-17', title: 'HUT RI Ke-81', type: 'Hari Libur' }
 ];
 
 export function SmartCalendar() {
@@ -112,8 +112,10 @@ export function SmartCalendar() {
 
               <div className="p-8">
                 <div className="grid grid-cols-7 gap-2 mb-4">
-                  {['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'].map(d => (
-                    <div key={d} className="text-center text-xs font-bold text-gray-400 uppercase">{d}</div>
+                  {['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'].map((d, index) => (
+                    <div key={d} className={`text-center text-xs font-bold uppercase ${index === 0 ? 'text-red-500' : 'text-gray-400'}`}>
+                      {d}
+                    </div>
                   ))}
                 </div>
 
@@ -122,19 +124,25 @@ export function SmartCalendar() {
                     <div key={wi} className="grid grid-cols-7 gap-2">
                       {week.map((day, di) => {
                         const hasEv = day ? isDateInEvent(day) : false;
+                        const isSunday = di === 0; // Cek apakah indeks kolom adalah 0 (Minggu)
+
                         return (
                           <div key={di} className={`aspect-square flex flex-col items-center justify-center rounded-xl transition-all border 
-                            ${day ? 'hover:bg-gray-50 cursor-pointer' : 'border-transparent'}
-                            ${hasEv ? 'bg-[#8FB935]/10 border-[#8FB935]/40' : 'border-gray-50'}`}>
-                            {day && (
-                              <>
-                                <span className={`font-medium ${hasEv ? 'text-[#8FB935]' : 'text-gray-700'}`}>{day}</span>
-                                {hasEv && <div className="w-1.5 h-1.5 bg-[#8FB935] rounded-full mt-1"></div>}
-                              </>
-                            )}
-                          </div>
-                        );
-                      })}
+                          ${day ? 'hover:bg-gray-50 cursor-pointer' : 'border-transparent'}
+                          ${hasEv ? 'bg-[#8FB935]/10 border-[#8FB935]/40' : 'border-gray-50'}`}>
+                          
+                          {day && (
+                            <>
+                              <span className={`font-medium 
+                                ${hasEv ? 'text-[#8FB935]' : isSunday ? 'text-red-600' : 'text-gray-700'}`}>
+                                {day}
+                              </span>
+                              {hasEv && <div className="w-1.5 h-1.5 bg-[#8FB935] rounded-full mt-1"></div>}
+                            </>
+                          )}
+                        </div
+                      );
+                    })}
                     </div>
                   ))}
                 </div>
