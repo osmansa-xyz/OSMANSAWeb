@@ -20,15 +20,15 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/osmansa_1"
+                target="_blank"                           // tab baru
+                rel="noopener noreferrer"                // keamanan
                 className="w-10 h-10 bg-[#8FB935] rounded-lg flex items-center justify-center hover:bg-[#7DA82E] transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/osmansa_1"
-                target="_blank"                           // tab baru
-                rel="noopener noreferrer"                // keamanan
+                href="#
                 className="w-10 h-10 bg-[#8FB935] rounded-lg flex items-center justify-center hover:bg-[#7DA82E] transition-colors"
               >
                 <Facebook className="w-5 h-5" />
