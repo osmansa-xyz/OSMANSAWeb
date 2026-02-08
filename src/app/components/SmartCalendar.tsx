@@ -5,7 +5,7 @@ interface Event {
   startDate: string;
   endDate?: string;
   title: string;
-  type: 'Keagamaan' | 'Hari Libur' | 'Olahraga' | 'Umum';
+  type: 'Keagamaan' | 'Hari Libur' | 'Olahraga' | 'Umum' | 'KJP';
 }
 
 const events: Event[] = [
@@ -13,6 +13,9 @@ const events: Event[] = [
   { startDate: '2025-08-19', title: 'Sertijab', type: 'Umum' },
   { startDate: '2025-12-08', endDate: '2025-12-18', title: 'Liga MAN', type: 'Olahraga' },
   { startDate: '2026-01-15', endDate: '2026-01-16', title: 'Peringatan Isra Miraj', type: 'Keagamaan' },
+  { startDate: '2026-01-23', title: 'Jumat Kreatif', type: 'KJP'},
+  { startDate: '2026-01-30', title: 'Jumat Kreatif', type: 'KJP'},
+  { startDate: '2026-02-06', title: 'Jumat Kreatif', type: 'KJP'}, 
   { startDate: '2026-08-17', title: 'HUT RI Ke-81', type: 'Hari Libur' }
 ];
 
