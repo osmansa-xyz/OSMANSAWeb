@@ -4,7 +4,6 @@ import { VisionMission } from './components/VisionMission';
 import { OrganizationalStructure } from './components/OrganizationalStructure';
 import { Departments } from './components/Departments';
 import { SmartCalendar } from './components/SmartCalendar';
-import { News } from './components/News';
 import { Contacts} from './components/Contacts';
 import { Footer } from './components/Footer';
 
@@ -18,7 +17,6 @@ export default function App() {
         <OrganizationalStructure />
         <Departments />
         <SmartCalendar />
-        <News />
         <Contacts />
       </main>
       <Footer />
