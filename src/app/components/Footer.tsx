@@ -19,7 +19,6 @@ export function Footer() {
               OSIM MAN 1 Kota Bengkulu adalah wadah utama pengembangan kepemimpinan dan kreativitas siswa di lingkungan madrasah. Kami hadir untuk menjembatani aspirasi siswa dan mewujudkan berbagai program kerja yang inovatif serta edukatif.
             </p>
             <div className="flex gap-4">
-              {/* Link Instagram yang sudah diperbaiki */}
               <a
                 href="https://www.instagram.com/osmansa_1"
                 target="_blank"
@@ -28,7 +27,6 @@ export function Footer() {
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              {/* Link Facebook (Tanda kutip sudah diperbaiki) */}
               <a
                 href="#"
                 className="w-10 h-10 bg-[#8FB935] rounded-lg flex items-center justify-center hover:bg-[#7DA82E] transition-colors"
